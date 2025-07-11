@@ -1,0 +1,64 @@
+nav {
+    float: right;
+
+    /* Occupa il 20% */
+    width: 20%;
+    /* bordo è di colore darkgreen, spessore di 2px */
+    border: 2px solid darkgreen;
+}
+
+/* Gli item della lista discendente di <nav> */
+nav>ul>li {
+    /* identificati da un cerchietto */
+    list-style-type: circle;
+    /* l’interlinea è pari a 2 em */
+    line-height: 2em;
+
+}
+
+/* I link discendenti di <nav> in caso di mousehover */
+nav a:hover {
+    /* sfondo colore darkgreen */
+    background-color: darkgreen;
+    /* testo in colore bianco */
+    color: white;
+}
+
+header {
+    float: left;
+
+    /* occupa circa il 70% della larghezza della finestra */
+    width: 70%;
+    /* ha sfondo lightgreen, bordo darkgreen, di spessore 2 px */
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    /* testo ha colore nero */
+    color: black;
+    /* Ha una ombreggiatura di colore green, con un effetto di sfocatura di 5px */
+    box-shadow: 5px 5px 5px green;
+}
+ /* L’elemento <section> occupa circa il 70% della larghezza della finestra del browser. Il testo è di colore nero, allineato a sinistra.*/
+section {
+    float: left;
+
+    /* occupa circa il 70% della larghezza della finestra */
+    width: 70%;
+    color: black;
+    text-align: left;
+}
+
+footer {
+    float: left;
+
+    /* occupa circa il 70% della larghezza della finestra */
+    width: 70%;
+    /* Il bordo deve essere di colore darkgreen, spessore 2px */
+    border: 2px solid darkgreen;
+    /* Il testo deve essere centrato e di colore darkgreen. */
+    text-align: center;
+    color: darkgreen;
+    /* La dimensione del font deve essere inferiore a quella del testo riportato in <section> */
+    font-size: 0.8em;
+    /* Ha una ombreggiatura di colore green, con un effetto di sfocatura di 5px (come l’elemento <header>). */
+    box-shadow: 5px 5px 5px green;
+}
