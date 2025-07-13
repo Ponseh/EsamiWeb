@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esame</title>
+</head>
+<body>
+    <table>
+        <caption>Bilancio di Genere: personale al 2020</caption>
+        <thead>
+            <tr>
+                <th scope="col" id="inquadramento">inquadramento</th>
+                <th scope="col" id="personale">personale</th>
+                <th scope="col" id="unita_di_personale">unità di personale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" headers="inquadramento" id="donne" rowspan="2">donne</th>
+                <th scope="row" headers="personale donne" id="docenti_donne" >docenti</th>
+                <td headers="unita_di_personale docenti_donne">1.782</td>
+            </tr>
+            <tr>
+                <th scope="row" headers="personale donne" id="amministrativi_donne" >amministrativi</th>
+                <td headers="unita_di_personale amministrativi_donne">1.012</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" headers="inquadramento" id="uomini" rowspan="2">uomini</th>
+                <th scope="row" headers="personale uomini" id="docenti_uomini" >docenti</th>
+                <td headers="unita_di_personale docenti_uomini">1.497</td>
+            </tr>
+            <tr>
+                <th scope="row" headers="personale uomini" id="amministrativi_uomini" >amministrativi</th>
+                <td headers="unita_di_personale amministrativi_uomini">1.246</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
