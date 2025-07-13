@@ -47,7 +47,7 @@ function createMainTable() {
             }
             
             // Aggiungi event listener per il click
-            cell.addEventListener('click', function() {
+            cell.addEventListener('click', () => {
                 handleCellClick(i, j, cell);
             });
             
