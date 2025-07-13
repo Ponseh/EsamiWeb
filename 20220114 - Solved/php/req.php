@@ -40,10 +40,15 @@ function isValidDate($dateString) {
         die("Connessione fallita: " . $conn->connect_error);
     }
 
-    if( !empty($_POST['nome']) &&
+    if( isset($_POST['nome']) &&
+        !empty($_POST['nome']) &&
+        isset($_POST['cognome']) &&
         !empty($_POST['cognome']) &&
+        isset($_POST['codice_fiscale']) &&
         !empty($_POST['codice_fiscale']) &&
+        isset($_POST['ddn']) &&
         !empty($_POST['ddn']) &&
+        isset($_POST['sesso']) &&
         !empty($_POST['sesso']) &&
         is_string($_POST['nome']) &&
         is_string($_POST['cognome']) && 
