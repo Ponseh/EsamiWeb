@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esame</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Sessione invernale</h1>
+    <h2>Corso di Laurea in Ingegneria e Scienze Informatiche</h2>
+
+    <table>
+        <caption>Appelli d'esame</caption>
+        <thead>
+            <tr>
+            <th scope="col" id="giorno">Giorno</th>
+            <th scope="col" id="aula">Aula</th>
+            <th scope="col" id="fascia_9_10">9:00 - 10:00</th>
+            <th scope="col" id="fascia_10_11">10:00 - 11:00</th>
+            <th scope="col" id="fascia_11_12">11:00 - 12:00</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th headers="giorno" scope="rowgroup" id="lunedi" rowspan="2">Lunedì</th>
+                <th headers="aula lunedi" scope="row" id="aula2_5_lunedi">Aula 2.5</th>
+                <td headers="fascia_9_10 aula2_5_lunedi">Algoritmi e strutture dati</td>
+                <td headers="fascia_10_11 aula2_5_lunedi">Programmazione</td>
+                <td headers="fascia_11_12 aula2_5_lunedi">Reti di telecomunicazione</td>
+            </tr>
+            <tr>
+                <th headers="aula lunedi" scope="row" id="lab2_2_lunedi">Laboratorio 2.2</th>
+                <td headers="fascia_9_10 fascia_10_11 fascia_11_12 lab2_2_lunedi" colspan="3">Tecnologie Web</td>
+            </tr>
+            <tr>
+                <th headers="giorno" scope="rowgroup" id="martedi" rowspan="2">Martedì</th>
+                <th headers="aula martedi" scope="row" id="aula2_5_martedi">Aula 2.5</th>
+                <td headers="fascia_9_10 aula2_5_martedi">Sistemi Operativi</td>
+                <td headers="fascia_10_11 fascia_11_12 aula2_5_martedi" colspan="2">Programmazione ad Oggetti</td>
+            </tr>
+            <tr>
+                <th headers="aula martedi" scope="row" id="lab2_2_martedi">Laboratorio 2.2</th>
+                <td headers="fascia_9_10 fascia_10_11 lab2_2_martedi" colspan="2">Basi di dati</td>
+                <td headers="fascia_11_12 lab2_2_martedi">Analisi Matematica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+    font-family: Arial;
+    color: darkgreen;
+}
+
+h1, h2 {
+    background-color: darkgreen;
+    color: orange;
+    font-size: 130%;
+    text-align: center;
+    border: 4px double darkgreen;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px green;
+}
+
+th {
+    text-align: center;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: yellow;
+}
+table {
+    border: 3px solid green;
+}

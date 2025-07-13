@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richiesta</title>
+</head>
+<body>
+    <form action="req.php" method="post">
+        <label for="titolo">Titolo:</label>
+        <input type="text" name="titolo" id="titolo"><br>
+        <label for="autore">Autore:</label>
+        <input type="text" name="autore" id="autore"><br>
+        <label for="isbn">ISBN:</label>
+        <input type="text" name="isbn" id="isbn"><br>
+        <label for="data_pubblicazione">Data di pubblicazione:</label>
+        <input type="text" name="data_pubblicazione" id="data_pubblicazione"><br>
+        <label for="genere">Genere:</label>
+        <input type="text" name="genere" id="genere"><br>
+
+        <input type="submit" value="Invia form">
+    </form>
+
+    <form action="req.php" method="get">
+        <label for="ID">ID:</label>
+        <input type="text" name="ID" id="ID">
+        
+        <input type="submit" value="Cerca">
+    </form>
+</body>
+</html>
