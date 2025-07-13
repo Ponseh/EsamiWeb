@@ -1,0 +1,74 @@
+/* Tutti i font devono avere lo stesso font-family, che deve essere Arial. La dimensione deve essere del 100%. */
+* {
+    font-family: Arial;
+    font-size: 100%; /* strano perchè nello screenshoot i size dei font sono diversi */
+}
+
+/*
+Il testo del titolo è grassetto, di colore Dark Green, allineato al centro,
+e il suo box ha un bordo dotted dello stesso colore, spessore 2px, con una ombreggiatura Gray,
+con sfocatura di 5px.
+Il colore di sfondo è Light Green.
+Margini, padding e discostamento dell’ombreggiatura devono essere simili a quelli riportati nello screenshot.
+*/
+header {
+    font-weight: bold;
+    color: darkgreen;
+    text-align: center;
+
+    border: 2px dotted darkgreen;
+    box-shadow: 5px 5px 5px gray;
+
+    background-color: lightgreen;
+}
+
+/*
+Il nav occupa il 20% della pagina e si trova sul lato destro della pagina.
+Il suo box ha un bordo dotted di colore Dark Green, spessore 2px, con una ombreggiatura Gray, con sfocatura di 5px.
+Il colore di sfondo è Light Green.
+Margini, padding e discostamento dell’ombreggiatura devono essere simili a quelli riportati nello screenshot.
+*/
+nav {
+    float: right;
+
+    width: 20%;
+
+    border: 2px dotted darkgreen;
+    box-shadow: 5px 5px 5px gray;
+
+    background-color: lightgreen;
+
+    margin-top: 1%;
+}
+
+/*
+La section è affiancata al nav, alla sua sinistra, e occupa lo spazio restante della finestra del browser.
+Margini e padding devono essere simili a quelli riportati nello screenshot.
+*/
+section {
+    float: left;
+
+    width: 79%;
+}
+
+/*
+Il footer occupa tutta la larghezza della finestra, con un bordo di spessore 2px, di colore Dark Green,
+colore di sfondo Light Green, con una ombreggiatura Gray, con sfocatura di 5px. Margini, padding e
+discostamento dell’ombreggiatura devono essere simili a quelli riportati nello screenshot.
+Il testo all’interno del footer è centrato e di colore nero.
+*/
+footer {
+    float: left;
+
+    width: 100%;
+
+    border: 2px dotted darkgreen;
+    background-color: lightgreen;
+    box-shadow: 5px 5px 5px gray;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Appelli d'esame</caption>
+        <tr>
+            <th scope="col" id="giorno">Giorno</th>
+            <th scope="col" id="aula">Aula</th>
+            <th scope="col" id="fascia_9_10">9:00 - 10:00</th>
+            <th scope="col" id="fascia_10_11">10:00 - 11:00</th>
+            <th scope="col" id="fascia_11_12">11:00 - 12:00</th>
+        </tr>
+        <tr>
+            <th scope="rowgroup" id="lunedi" headers="giorno" rowspan="2">Lunedì</th>
+            <th scope="row" id="aula2_9_lunedi" headers="aula lunedi">Aula 2.9</th>
+            <td headers="lunedi aula2_9_lunedi fascia_9_10 fascia_10_11" colspan="2">Sistemi Operativi</td>
+            <td headers="lunedi aula2_9_lunedi fascia_11_12">Informatica e diritto</td>
+        </tr>
+        <tr>
+            <th scope="row" id="lab3_1_lunedi" headers="aula lunedi">Laboratorio 3.1</th>
+            <td headers="lunedi lab3_1_lunedi fascia_9_10">Reti di Telecomunicazione</td>
+            <td headers="lunedi lab3_1_lunedi fascia_10_11 fascia_11_12" colspan="2">Basi di Dati</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" id="martedi" headers="giorno" rowspan="2">Martedì</th>
+            <th scope="row" id="aula2_5_martedi" headers="aula martedi">Aula 2.5</th>
+            <td headers="martedi aula2_5_martedi fascia_9_10">Programmazione</td>
+            <td headers="martedi aula2_5_martedi fascia_10_11">Analisi Matematica</td>
+            <td headers="martedi aula2_5_martedi fascia_11_12">Algoritmi e strutture dati</td>
+        </tr>
+        <tr>
+            <th scope="row" id="lab3_3_martedi" headers="aula martedi">Laboratorio 3.3</th>
+            <td headers="martedi lab3_3_martedi fascia_9_10 fascia_10_11" colspan="2">Tecnologie Web</td>
+            <td headers="martedi lab3_3_martedi fascia_11_12">Programmazione ad oggetti</td>
+        </tr>
+    </table>
+</body>
+</html>
