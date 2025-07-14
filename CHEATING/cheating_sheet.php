@@ -1,7 +1,13 @@
 <?php
 // PHP CHEAT SHEET
 
-/* Controlla se la data è valida */
+// Controlla come è stata fatta la richiesta
+$_SERVER['REQUEST_METHOD'] === 'POST';
+$_SERVER['REQUEST_METHOD'] === 'GET';
+
+/**********************************************************/
+
+// Controlla se la data è valida (YYYY-MM-GG)
 function isValidDate($dateString) {
     if (!preg_match('/^(\d{1,4})-(\d{1,2})-(\d{1,2})$/', $dateString, $matches)) {
         return false;
@@ -14,13 +20,17 @@ function isValidDate($dateString) {
     return checkdate($month, $day, $year);
 }
 
-/* Apri connessione db */
+/**********************************************************/
+
+// Apri connessione db
 $conn = new mysqli("localhost", "root", "", "libro");
 if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
 }
 
-/* Inserimento */
+/**********************************************************/
+
+// Inserimento
 $stmt = $conn->prepare("INSERT INTO libro (titolo, autore, isbn, data_pubblicazione, genere) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("sssss", $_POST['titolo'], $_POST['autore'],  $_POST['isbn'], $_POST['data_pubblicazione'], $_POST['genere']);
 
@@ -35,8 +45,9 @@ $lastInsert = $conn->insert_id; // Utile ogni tanto, restituisce l'ID dell'ultim
 $stmt->close();
 $conn->close();
 
+/**********************************************************/
 
-/* Selezione con ciclo valori e creazione tabella */
+// Selezione con ciclo valori e creazione tabella
 $stmt = $conn->prepare("SELECT * FROM libro WHERE id=?");
 $stmt->bind_param("i", $_GET['ID']);
 
@@ -69,14 +80,17 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 
+/**********************************************************/
 
-/* Controlla il cf con regex */
+// Controlla il cf con regex 
 function validaCodiceFiscale(string $cf) {
     return preg_match(
         '/^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]$/',
         strtoupper($cf)
     ) === 1;
 }
+
+/**********************************************************/
 
 /*
 i - integer
