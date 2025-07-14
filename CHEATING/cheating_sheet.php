@@ -30,8 +30,11 @@ if ($stmt->execute()) {
     echo "<p>Errore nell'inserimento: " . $stmt->error . "</p>";
 }
 
+$lastInsert = $conn->insert_id; // Utile ogni tanto, restituisce l'ID dell'ultimo elemento inserito
+
 $stmt->close();
 $conn->close();
+
 
 /* Selezione con ciclo valori e creazione tabella */
 $stmt = $conn->prepare("SELECT * FROM libro WHERE id=?");
