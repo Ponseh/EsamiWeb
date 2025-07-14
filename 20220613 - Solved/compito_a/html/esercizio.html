@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form</title>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+</head>
+<body>
+    <form action="." method="get">
+        <fieldset>
+            <legend>Selezione dei titoli:</legend>
+            <input type="checkbox" name="libro" id="libro1" value="Sistemi_operativi"/>
+            <label for="libro1">Sistemi operativi. Concetti ed esempi, di Abraham Silberschatz et al.</label><br/>
+            <input type="checkbox" name="libro" id="libro2" value="Linguaggi_di_programmazione"/>
+            <label for="libro2">Linguaggi di programmazione. Principi e paradigmi, di Maurizio Gabbrielli e Simone Martini</label><br/>
+            <input type="checkbox" name="libro" id="libro3" value="I moderni_sistemi_operativi"/>
+            <label for="libro3">I moderni sistemi operativi, di Andrew Tanenbaum</label><br/>
+            <input type="checkbox" name="libro" id="libro4" value="Fondamenti_di_reti_di_calcolatori"/>
+            <label for="libro4">Fondamenti di reti di calcolatori, di Andrew Tanenbaum</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Tipo di formato:</legend>
+            <input type="radio" name="formato" id="formato1"/>
+            <label for="formato1">copertina flessibile</label><br/>
+            <input type="radio" name="formato" id="formato2"/>
+            <label for="formato2">copertina rigida</label><br/>
+            <input type="radio" name="formato" id="formato3"/>
+            <label for="formato3">formato elettronico</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Consegna:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"/><br/>
+            <label for="cognome">Cognome:</label>
+            <input type="text" name="cognome" id="cognome"/><br/>
+            <label for="via">Via:</label>
+            <input type="text" name="via" id="via"/><br/>
+            <label for="numero_civico">Numero civico:</label>
+            <input type="text" name="numero_civico" id="numero_civico"/><br/>
+            <label for="citta">Città:</label>
+            <input type="text" name="citta" id="citta"/><br/>
+            <label for="provincia">Provincia:</label>
+            <input type="text" name="provincia" id="provincia"/><br/>
+            <label for="CAP">CAP:</label>
+            <input type="number" name="CAP" id="CAP"/>
+            <fieldset>
+                <legend>Orario di consegna:</legend>
+                <input type="radio" name="orario" id="orario1" value="9-13"/>
+                <label for="orario1">09:00-13:00</label><br/>
+                <input type="radio" name="orario" id="orario2" value="13-17"/>
+                <label for="orario2">13:00-17:00</label><br/>
+                <input type="radio" name="orario" id="orario3" value="17-21"/>
+                <label for="orario3">17:00-21:00</label>
+            </fieldset>
+            <input type="checkbox" name="pagamento_consegna" id="pagamento_consegna"/>
+            <label for="pagamento_consegna">Pagamento alla consegna</label>
+        </fieldset>
+        
+        <!-- No, nè nelle slide nè su internet c'è scritto che per accessibilità il campo input:reset ha necessità di una label -->
+        <input type="reset" name="cancella" id="cancella" value="Cancella"/>
+        <input type="submit" name="invia" id="invia" value="Invia"/>
+    </form>
+</body>
+</html>
+

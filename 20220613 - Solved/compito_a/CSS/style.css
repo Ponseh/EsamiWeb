@@ -1,0 +1,34 @@
+* {
+    font-family: Arial;
+}
+
+legend {
+    background-color: orange;
+    color: darkred;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px -5px 10px gray;
+}
+
+form {
+    background-color: yellow;
+    border: 2px solid orange;
+    border-radius: 2px;
+    box-shadow: 10px -10px 2px gray;
+}
+
+label {
+    color: black;
+    font-size: 120%;
+}
+
+button {
+    background-color: orange;
+    color: black;
+    font-size: 150%;
+    border-radius: 2px;
+}
+
+fieldset {
+    border-color: darkred;
+}
