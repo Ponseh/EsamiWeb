@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio HTML</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Campus</h1>
+    <h2>Orario Secondo Ciclo</h2>
+    <table>
+        <caption>Orario</caption>
+        <thead>
+            <tr>
+                <th scope="col" id="orario">Orario</th>
+                <th scope="col" id="lunedi">Lunedì</th>
+                <th scope="col" id="mercoledi">Mercoledì</th>
+                <th scope="col" id="venerdi">Venerdì</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" headers="orario" id="mattina">Mattina</th>
+                <td headers="lunedi mattina">Lezione</td>
+                <td headers="mercoledi mattina pomeriggio" rowspan="2">Laboratorio</td>
+                <td headers="venerdi mattina">Studio</td>
+            </tr>
+            <tr>
+                <th scope="row" headers="orario" id="pomeriggio">Pomeriggio</th>
+                <td headers="lunedi pomeriggio">Progetto</td>
+                <td headers="venerdi pomeriggio sera" rowspan="2">Laboratorio</td>
+            </tr>
+            <tr>
+                <th scope="row" headers="orario" id="sera">Sera</th>
+                <td headers="lunedi sera">Ricevimento</td>
+                <td headers="mercoledi sera">Lezione</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!-- 15:55 - 16:05 -->
