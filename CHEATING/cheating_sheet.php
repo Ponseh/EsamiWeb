@@ -105,4 +105,7 @@ empty()
 is_string()
 strlen()
 strtoupper()
+json_encode()  // ci metti dentro un array e restituisce un json fatto
+
+header('Content-Type: application/json');
 ?>
