@@ -86,7 +86,7 @@ function isValidDate($dateString) {
 
                     echo "</table>";
                 } else {
-                    echo "<p>Nessun cittadino trovato con ID {$_POST['id']}.</p>";
+                    echo "<p>Nessun cittadino trovato.</p>";
                 }
             } else {
                 echo "<p>Errore nell'esecuzione della query: " . $stmt->error . "</p>";

@@ -79,7 +79,7 @@ function isValidDate($dateString) {
 
                 echo "</table>";
             } else {
-                echo "<p>Nessun libro trovato con ID {$_POST['id']}.</p>";
+                echo "<p>Nessun libro trovato con ID {$_GET['id']}.</p>";
             }
         } else {
             echo "<p>Errore nell'esecuzione della query: " . $stmt->error . "</p>";
@@ -110,7 +110,7 @@ function isValidDate($dateString) {
 
                 echo "</table>";
             } else {
-                echo "<p>Nessun libro trovato con ID {$_POST['id']}.</p>";
+                echo "<p>Nessun libro trovato.</p>";
             }
         } else {
             echo "<p>Errore nell'esecuzione della query: " . $stmt->error . "</p>";
