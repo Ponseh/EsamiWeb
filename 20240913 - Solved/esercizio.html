@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appelli</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Sessione autunnale</h1>
+    <h2>Corso di Laure in Ingegneria e Scienze Informatiche</h2>
+    <table>
+        <caption>Appelli d'esame</caption>
+        <thead>
+            <tr>
+                <th scope="col" id="giorno">Giorno</th>
+                <th scope="col" id="aula">Aula</th>
+                <th scope="col" id="9-10">9:00-10:00</th>
+                <th scope="col" id="10-11">10:00-11:00</th>
+                <th scope="col" id="11-12">11:00-12:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" headers="giorno" id="lunedi" rowspan="2">Lunedì</th>
+                <th scope="row" headers="aula giorno" id="aula2_9_lunedi">Aula 2.9</th>
+                <td headers="9-10 10-11 aula2_9_lunedi" colspan="2">Sistemi Operativi</td>
+                <td headers="11-12 aula2_9_lunedi">Informatica e diritto</td>
+            </tr>
+            <tr>
+                <th scope="row" headers="aula giorno" id="lab3_1_lunedi">Laboratorio 3.1</th>
+                <td headers="9-10 lab3_1_lunedi">Reti di comunicazione</td>
+                <td headers="10-11 11-12 lab3_1_lunedi" colspan="2">Basi di dati</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" headers="giorno" id="martedi" rowspan="2">Martedì</th>
+                <th scope="row" headers="aula giorno" id="aula2_5_martedi">Aula 2.5</th>
+                <td headers="9-10 aula2_5_martedi">Programmazione</td>
+                <td headers="10-11 aula2_5_martedi">Analisi Matematica</td>
+                <td headers="11-12 aula2_5_martedi">Algoritmi e strutture dati</td>
+            </tr>
+            <tr>
+                <th scope="row" headers="aula giorno" id="lab3_3_martedi">Laboratorio 3.3</th>
+                <td headers="9-10 10-11 lab3_3_martedi" colspan="2">Tecnologie web</td>
+                <td headers="11-12 lab3_3_martedi" >Programmazione ad oggetti</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

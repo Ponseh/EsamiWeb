@@ -1,0 +1,26 @@
+* {
+    font-family: Arial;
+    color: darkblue;
+}
+
+h1, h2 {
+    background-color: darkblue;
+    color: yellow;
+    font-size: 150%;
+    text-align: center;
+    border: 4px double darkgreen;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px gray;
+}
+
+th {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 110%;
+    background-color: yellow;
+}
+
+table {
+    border: 1px solid blue;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio PHP</title>
+</head>
+<body>
+    <form action="req.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" /><br />
+        <label for="cognome">Cognome:</label>
+        <input type="text" name="cognome" id="cognome" /><br />
+        <label for="codice_fiscale">Codice fiscale:</label>
+        <input type="text" name="codice_fiscale" id="codice_fiscale" /><br />
+        <label for="ddn">Data di Nascita (YYYY-MM-GG)</label>
+        <input type="text" name="ddn" id="ddn" /><br />
+        <label for="sesso">Sesso (M - F - A)</label>
+        <input type="text" name="sesso" id="sesso" /><br />
+        <input type="submit" value="Inserisci" />
+    </form>
+
+    <form action="req.php" method="post">
+        <input type="text" name="ID" id="ID" /><br />
+        <input type="submit" value="Cerca" />
+    </form>
+</body>
+</html>
