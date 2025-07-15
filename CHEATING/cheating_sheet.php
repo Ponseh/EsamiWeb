@@ -49,7 +49,7 @@ $conn->close();
 
 // Selezione con ciclo valori e creazione tabella
 $stmt = $conn->prepare("SELECT * FROM libro WHERE id=?");
-$stmt->bind_param("i", $_GET['ID']);
+$stmt->bind_param("i", $_POST['ID']);
 
 if ($stmt->execute()) {
     $result = $stmt->get_result();
@@ -71,7 +71,7 @@ if ($stmt->execute()) {
 
         echo "</table>";
     } else {
-        echo "<p>Nessun cittadino trovato con ID {$_POST['id']}.</p>";
+        echo "<p>Nessun cittadino trovato con ID {$_POST['ID']}.</p>";
     }
 } else {
     echo "<p>Errore nell'esecuzione della query: " . $stmt->error . "</p>";
@@ -104,4 +104,5 @@ isset()
 empty()
 is_string()
 strlen()
+strtoupper()
 ?>
