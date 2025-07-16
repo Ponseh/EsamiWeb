@@ -80,6 +80,24 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 
+/******************************************************** */
+
+// Ciclo su tutte le entry del select + json
+
+$serie = [];
+$stmt = $conn->prepare("SELECT * FROM manga");
+
+if ($stmt->execute()) {
+    $result = $stmt->get_result();
+    while ($row = $result->fetch_assoc())
+        $serie[] = $row;
+}
+
+if($serie)
+    echo json_encode($serie);
+else
+    echo json_encode(['error' => 'Errore nella select']);
+
 /**********************************************************/
 
 // Controlla il cf con regex 
