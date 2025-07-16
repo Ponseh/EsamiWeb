@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esame</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Acquisto e Consegna</h1>
+
+    <form action="." method="get">
+        <fieldset>
+            <legend>Campo Estivo</legend>
+            <label for="nome_campo_estivo">Nome Campo Estivo:</label>
+            <input type="text" name="nome_campo_estivo" id="nome_campo_estivo" placeholder="Nome del campo estivo" /><br />
+            <label for="data_inizio">Data di inizio:</label>
+            <input type="date" name="data_inizio" id="data_inizio" /><br />
+            <label for="data_fine">Data di fine:</label>
+            <input type="date" name="data_fine" id="data_fine" /><br />
+            <fieldset>
+                <legend>Tipo di pasto:</legend>
+                <input type="radio" name="pasto" id="no_richiesta" value="nessuna_richiesta" /><label for="no_richiesta">nessuna richiesta</label><br />
+                <input type="radio" name="pasto" id="allergia" value="allergia" /><label for="allergia">allergia</label><br />
+                <input type="radio" name="pasto" id="vegetariano" value="vegetariano" /><label for="vegetariano">vegetariano</label><br />
+                <input type="radio" name="pasto" id="vegano" value="vegano" /><label for="vegano">vegano</label>
+            </fieldset>
+            <fieldset>
+                    <legend>Tipo di sport:</legend>
+                <input type="radio" name="sport" id="nuoto" value="nuoto" /><label for="nuoto">nuoto</label><br />
+                <input type="radio" name="sport" id="pallavolo" value="pallavolo" /><label for="pallavolo">pallavolo</label><br />
+                <input type="radio" name="sport" id="calcio" value="calcio" /><label for="calcio">calcio</label><br />
+                <input type="radio" name="sport" id="pallamano" value="pallamano" /><label for="pallamano">pallamano</label>
+            </fieldset> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Anagrafica bambino/a</legend>
+            <label for="nome">Nome:</label><input type="text" name="nome" id="nome" placeholder="nome" /><br />
+            <label for="cognome">Cognome:</label><input type="text" name="cognome" id="cognome" placeholder="cognome" /><br />
+            <label for="indirizzo">Indirizzo:</label><input type="text" name="indirizzo" id="indirizzo" placeholder="indirizzo" /><br />
+            <label for="cap">CAP:</label><input type="text" pattern="\d*" maxlength="5" name="cap" id="cap" placeholder="CAP" /><br />
+            <label for="citta">Città:</label><input type="text" name="citta" id="citta" placeholder="città" /><br />
+            <label for="provincia">Provincia:</label><input type="text" maxlength="2" name="provincia" id="provincia" placeholder="provincia" /><br />
+            <label for="ddn">Data di nascita:</label><input type="date" name="ddn" id="ddn" />
+        </fieldset>
+
+        <input type="reset" value="Cancella form" />
+        <input type="submit" value="Invia form" />
+    </form>
+</body>
+</html>

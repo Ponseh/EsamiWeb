@@ -1,0 +1,46 @@
+* {
+    font-family: Verdana;
+    font-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 150%;
+    font-style: italic;
+    border: 3px dotted red;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    background-color: orange;
+    color: black;
+    padding: 3px;
+}
+
+fieldset {
+    border: 3px dashed red;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+input[type="text"]:focus {
+    border: 3px dotted red;
+    font-weight: bold;
+    color: red;
+}
+
+button {
+    background-color: white;
+    border: 3px dotted darkblue;
+    border-radius: 5px;
+    color: darkblue;
+}
+
+button:hover {
+    border-color: darkblue;
+    color: darkblue;
+    font-weight: bold;
+}
